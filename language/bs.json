@@ -1,0 +1,297 @@
+{
+  "semantics": [
+    {
+      "label": "Opis zadatka",
+      "description": "Ovdje opiši zadatak"
+    },
+    {
+      "label": "riječi",
+      "widgets": [
+        {
+          "label": "Uobičajeno"
+        }
+      ],
+      "entity": "Riječ",
+      "field": {
+        "label": "Riječ",
+        "fields": [
+          {
+            "label": "Trag",
+            "description": "Trag koji bi trebau ukazivati na odgovor."
+          },
+          {
+            "label": "Odgovor",
+            "description": "Odgovor na trag."
+          },
+          {
+            "label": "Dodatni trag"
+          },
+          {
+            "label": "Postavi riječ u ukrštenici",
+            "description": "Postavi riječ na željeno mjestu u ukrštenici."
+          },
+          {
+            "label": "Red",
+            "description": "Indeks reda gdje odgovor treba početi."
+          },
+          {
+            "label": "Kolona",
+            "description": "Indeks kolone gdje odgovor treba početi."
+          },
+          {
+            "label": "Pravac",
+            "description": "Pravac odgovora.",
+            "options": [
+              {
+                "label": "Vodoravno"
+              },
+              {
+                "label": "Uspravno"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "Riječ konačnog rješenja",
+      "description": "Opcionalno dodajte riječ koja se može formirati od odgovora upotrebljenih u ukrštenici. Bit će vidljiva samo ako se sva slova mogu pronaći u ukrštenici. Napomena: Još ne postoji podrška za pristupačnost za ovu funkciju."
+    },
+    {
+      "label": "Feedback",
+      "fields": [
+        {
+          "widgets": [
+            {
+              "label": "Uobičajeno"
+            }
+          ],
+          "label": "Definiraj uobičajeni feedback za bilo koji postignuti rezultat",
+          "description": "Kliknite na \"Dodaj raspon\" i dodajte onoliko raspona koliko želite. Primjer: 0-20% Loše, 21-91% Dobro, 91-100% Odlično!",
+          "entity": "raspon",
+          "field": {
+            "fields": [
+              {
+                "label": "Raspon rezultata"
+              },
+              {},
+              {
+                "label": "Feedback za definirani raspon",
+                "placeholder": "Popuni feedback"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Tema",
+      "fields": [
+        {
+          "label": "Ilustracija pozadine",
+          "description": "Odaberite opcionalnu ilustraciju pozadine. Biće skalirana da odgovara pozadini bez razvlačenja."
+        },
+        {
+          "label": "Boja pozadine",
+          "description": "Odaberi boju pozadine. Biće upotrijebljeno umjesto pozadinske ilustracije ili kao boja za transparentna područja.",
+          "default": "#173354"
+        },
+        {
+          "label": "Boja mreže",
+          "description": "Odaberi boju mreže.",
+          "default": "#000000"
+        },
+        {
+          "label": "Boja pozadine u polju",
+          "description": "Odaberi boju pozadine u polju tabele.",
+          "default": "#ffffff"
+        },
+        {
+          "label": "Boja teksta u polju",
+          "description": "Odaberi boju teksta u polju tabele.",
+          "default": "#000000"
+        },
+        {
+          "label": "Boja id traga",
+          "description": "Odaberi boju id traga u polju tablete.",
+          "default": "#606060"
+        },
+        {
+          "label": "Boja teksta u polju (naglašeno)",
+          "description": "Odaberi boju pozadine u polju tabele koja je naglašeno.",
+          "default": "#3e8de8"
+        },
+        {
+          "label": "Boja teksta u polju (naglašeno)",
+          "description": "Odaberi boju teksta u polju tabele koje je naglašeno.",
+          "default": "#ffffff"
+        },
+        {
+          "label": "Boja id traga (naglašeno)",
+          "description": "Odaberi boju id traga u polju tablete koje je naglašeno.",
+          "default": "#e0e0e0"
+        }
+      ]
+    },
+    {
+      "label": "Podešavanje ponašanja",
+      "description": "Ove opcije će ti omogućiti kontrolu kako se zadatak ponaša.",
+      "fields": [
+        {
+          "label": "Broj riječi koje će biti prikazane",
+          "description": "Kreirajte slučajno odabranu grupu riječi iz skupa. Grupa će uvijek sadržavati barem sve riječi koje su bile fiksirane na mreži bez obzira na ovu postavku. Prazna vrijednost ili 0 znači koristiti sve riječi."
+        },
+        {
+          "label": "Omogući trenutan feedback"
+        },
+        {
+          "label": "Riječi rezultata",
+          "description": "Ako je ova opcija omogućena, broj riječi će biti ubrojan i utjecati na rezultat. A ako ne onda će broj tačnih slova biti ubrajan."
+        },
+        {
+          "label": "Primjeni kazne",
+          "description": "Ako je ova opcija omogućena za svaki pogrešan odgovor biće dodijeljen kazneni negativni bod."
+        },
+        {
+          "label": "Omogući \"Ponovi\""
+        },
+        {
+          "label": "Omogući \"Rješenje\""
+        }
+      ]
+    },
+    {
+      "label": "Korisnički interfejs",
+      "fields": [
+        {
+          "label": "Oznaka za vodoravno",
+          "default": "Vodoravno"
+        },
+        {
+          "label": "Oznaka za uspravno",
+          "default": "Uspravno"
+        },
+        {
+          "label": "Tekst za opciju \"Provjeri\"",
+          "default": "Provjeri"
+        },
+        {
+          "label": "Tekst za opciju \"Ponovi\"",
+          "default": "Ponovi"
+        },
+        {
+          "label": "Tekst za opciju \"Prikaži rješenje\"",
+          "default": "Prikaži rješenje"
+        },
+        {
+          "label": "Ukrštenica se ne može napraviti",
+          "default": "Sa unešenim riječima se ukršetenica ne može generirati. Molimo da pokušate sa manje riječi ili sa riječima koje imaju više zajedničkih slova. Ako koristite fiksirane riječi, provjerite da možda one ne onemogućavaju generiranje ukrštenice."
+        },
+        {
+          "label": "Ukrštenica se ne može napraviti (premalo riječi)",
+          "default": "Ukršetenica ne može generirati. Potrebne su bar dvije riječi."
+        },
+        {
+          "label": "Probematične riječi",
+          "description": "Spisak riječi koje prave problem u generiranju ukrštenice. @words će biti zamijenjene sa problematičnim riječima.",
+          "default": "Problematične riječi: @words"
+        },
+        {
+          "label": "Ekstra trag",
+          "default": "Ekstra trag"
+        },
+        {
+          "label": "Zatvori prozor",
+          "default": "Zatvori prozor"
+        }
+      ]
+    },
+    {
+      "label": "Readspeaker",
+      "fields": [
+        {
+          "label": "Opis ukrštenice",
+          "default": "Ukrštenica. Koristi strelice za kretanje kroz ukrštenicu, a tipke tastature za upisivanje slova."
+        },
+        {
+          "label": "Kolona",
+          "default": "Kolona"
+        },
+        {
+          "label": "Red",
+          "default": "Red"
+        },
+        {
+          "label": "Vodoravno",
+          "default": "Vodoravno"
+        },
+        {
+          "label": "Uspravno",
+          "default": "Uspravno"
+        },
+        {
+          "label": "Prazno",
+          "default": "Prazno"
+        },
+        {
+          "description": "Najavljivač rezultata. @clue će biti zamijenjen sa odgovarajućim riječima.",
+          "label": "Rezultat za",
+          "default": "Rezultat za: @clue"
+        },
+        {
+          "label": "Tačno",
+          "default": "Tačno"
+        },
+        {
+          "label": "Netačno",
+          "default": "Netačno"
+        },
+        {
+          "label": "Poen",
+          "default": "Poen"
+        },
+        {
+          "description": "Najavljivač rješenja. @clue i @solution će biti zamijenjeni sa odgovarajućim riječima.",
+          "label": "Rješenje za",
+          "default": "Za @clue rješenje je: @solution"
+        },
+        {
+          "description": "Najava ekstra traga. @clue će biti zamijenjen sa odgovarajućim riječima.",
+          "label": "Ekstra trag",
+          "default": "Otvori ekstra riječ za @clue"
+        },
+        {
+          "label": "Prazno polje",
+          "default": "Prazno polje"
+        },
+        {
+          "description": "Trenutna pozicija. @position i @length će biti zamijenjeni sa odgovarajućim riječima.",
+          "label": "Slovo",
+          "default": "Slovo @position od @length"
+        },
+        {
+          "description": "Dužina riječi. @length će biti zamijenjen sa odgovarajućom riječi.",
+          "label": "Dužina riječi",
+          "default": "Riječ od @length slova"
+        },
+        {
+          "label": "Pomoćni opis za opciju \"Provjeri\"",
+          "default": "Provjeri slova. Odgovori će biti označeni kao tačno, netačno ili neodgovoreno."
+        },
+        {
+          "label": "Pomoćni opis za opciju \"Prikaži rješenje\"",
+          "default": "Prikaži rješenje. Ukrštenica će biti ispunjena sa tačnim rješenjem."
+        },
+        {
+          "label": "Pomoćni opis za opciju \"Ponovi\"",
+          "default": "Ponovi zadatak. Resetiraj sve i počni ispočetka."
+        },
+        {
+          "label": "Vaš rezultat",
+          "description": "@score i @total će biti zamijenjeni sa odgovarajućim riječima.",
+          "default": "Osvojili ste @score od @total poena."
+        }
+      ]
+    }
+  ]
+}
